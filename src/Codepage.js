@@ -10,7 +10,7 @@ export default function CodePage() {
 
   const getToken = async (code) => {
     try {
-      const response = await fetch("http://157.245.204.196:8069/oauth2/token", {
+      const response = await fetch("https://oidc.piaccess.vivasoftltd.com/oauth2/token", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -20,7 +20,7 @@ export default function CodePage() {
           client_secret: "4ce4daeb43572eb34ae3",
           code,
           grant_type: "authorization_code",
-          redirect_uri:"http://localhost:3002/dashboard",
+          redirect_uri:"https://sso-app-two-v.vercel.app/dashboard",
         }),
       });
 
