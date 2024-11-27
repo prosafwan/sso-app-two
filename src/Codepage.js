@@ -16,8 +16,8 @@ export default function CodePage() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          client_id: "4b4bedc312",
-          client_secret: "4ce4daeb43572eb34ae3",
+          client_id: "bb42ff14a7",
+          client_secret: "g3g42h34jhv23jh4v",
           code,
           grant_type: "authorization_code",
           redirect_uri:"https://sso-app-two-v.vercel.app/dashboard",

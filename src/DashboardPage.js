@@ -30,7 +30,7 @@ const DashboardPage = () => {
 
       // Fetch user data from the API
       const response = await fetch(
-        `https://oidc.piaccess.vivasoftltd.com/user/${userId}`,
+        `https://oidc.piaccess.vivasoftltd.com/users/${userId}`,
         {
           method: "GET",
           headers: {

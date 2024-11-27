@@ -9,7 +9,7 @@ export default function Login() {
       setIsLoading(true);
       let url = "";
       if (provider === "piaccess") {
-        url = `https://oidc.piaccess.vivasoftltd.com/oauth2/authorize?client_id=4b4bedc312&redirect_uri=https://sso-app-two-v.vercel.app&scope=email,roles&response_type=code&state=given_state`;
+        url = `https://oidc.piaccess.vivasoftltd.com/oauth2/authorize?client_id=bb42ff14a7&redirect_uri=https://sso-app-two-v.vercel.app&scope=email,roles&response_type=code&state=given_state`;
       } else if (provider === "google") {
         url = `https://accounts.google.com/o/oauth2/v2/auth?client_id=YOUR_GOOGLE_CLIENT_ID&redirect_uri=https://sso-app-two-v.vercel.app&scope=email%20profile&response_type=code&state=given_state`;
       }
